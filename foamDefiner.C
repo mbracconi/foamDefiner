@@ -37,8 +37,6 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-using namespace std;
-
 #include <vector>
 #include <iomanip>
 #include <iostream>
@@ -46,7 +44,6 @@ using namespace std;
 #include "fvCFD.H"
 #include "multivariateScheme.H"
 #include "meshTools.H"
-#include "PatchArea.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -54,7 +51,7 @@ int main(int argc, char *argv[])
 {
 	// Solver setup (folders, mesh, etc.)
 	timeSelector::addOptions();
-    #include "setRootCase.H"
+	#include "setRootCase.H"
 	#include "createTime.H"
 	#include "createMesh.H"
 
