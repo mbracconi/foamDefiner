@@ -1,29 +1,41 @@
-/*------------------------------------------------------------------------\
-|                                                                         |                                                                       
-|   Author:                                                               |
-|   Mauro Bracconi <mauro.braccon@polimi.it>                              |
-|   Department of Energy                                                  |
-|   Politecnico di Milano                                                 |
-|   via La Masa, 34 - 20156 - Milano, Italy                               |
-|                                                                         |
-|-------------------------------------------------------------------------|
-|                                                                         |
-|   Copyright(C) 2016 - Mauro Bracconi                                    |
-|                                                                         |
-|   foamDefiner is distributed in the hope that it will be useful, but    |
-|   WITHOUT ANY WARRANTY; without even the implied warranty of            | 
-|   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU     |
-|   General Public License for more details.                              |
-|   You should have received a copy of the GNU General Public License     |
-|   If not, see <http://www.gnu.org/licenses/>.                           |
-|                                                                         |
-|-------------------------------------------------------------------------|
-|                                                                         |
-|   foamDefiner                                                           |
-|                                                                         |
-|   Utility to evaluate the void fraction and the specific surface area   |
-|                                                                         |
-\*-----------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     |
+    \\  /    A nd           | Copyright (C) 2012 OpenFOAM Foundation
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+Author                                                               
+    Mauro Bracconi <mauro.braccon@polimi.it>                             
+    Department of Energy                                                  
+    Politecnico di Milano                                                
+    via La Masa, 34 - 20156 - Milano, Italy   
+-------------------------------------------------------------------------------
+License
+    This file is derivative work of OpenFOAM.
+
+    OpenFOAM is free software: you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    OpenFOAM is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+    for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
+
+Application
+    foamDefiner
+
+Description
+    Utility to evaluate the void fraction and the specific surface area of 
+    an OpenFOAM mesh
+    
+
+\*---------------------------------------------------------------------------*/
 
 using namespace std;
 
