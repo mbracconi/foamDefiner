@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
 
 	//Write on terminal
 	Info << "---------------------------------------------------" << endl;
-	Info << "Catalytic area 	= " <<  patchArea << "	[m2]" << endl;
+	Info << "Catalytic area = " <<  patchArea << "	[m2]" << endl;
 	Info << "Sv            	= " <<  patchArea/bbVolume << "	[m2/m3]" << endl;
 	Info << "Void fraction 	= " <<  voidFrac << "	[-]" << endl;
 	Info << "---------------------------------------------------" << endl;
@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
 		if(Pstream::master())
 		{
 			fmassFlux_.reset( new OFstream("../foamInfo"));
-			fmassFlux_() << "Catalytic area 	= " <<  patchArea << "	[m2]" << endl;
+			fmassFlux_() << "Catalytic area	= " <<  patchArea << "	[m2]" << endl;
 			fmassFlux_() << "Sv            	= " <<  patchArea/bbVolume << "	[m2/m3]" << endl;
 			fmassFlux_() << "Void fraction 	= " <<  voidFrac << "	[-]" << endl;
 		}
@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
 	else 
 	{
 		fmassFlux_.reset( new OFstream("foamInfo"));
-		fmassFlux_() << "Catalytic area 	= " <<  patchArea << "	[m2]" << endl;
+		fmassFlux_() << "Catalytic area = " <<  patchArea << "	[m2]" << endl;
 		fmassFlux_() << "Sv            	= " <<  patchArea/bbVolume << "	[m2/m3]" << endl;
 		fmassFlux_() << "Void fraction 	= " <<  voidFrac << "	[-]" << endl;
 	}
