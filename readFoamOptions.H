@@ -15,5 +15,5 @@ IOdictionary foamOptions
 word  surfacePatch_(foamOptions.lookup("foamSurfacePatch"));
 
 // Switch -> off solid fraction | on void fraction
-Switch  fractionType_(foamOptions.lookup("fractionType"));
+Switch  fractionType_(foamOptions.lookup("voidFraction"));
 
